@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "comp":"/components/comp/comp",
+    "my-radio":"/components/my-radio/my-radio",
+    "chat-item":"/components/chat-item/chat-item"
+  }
+}

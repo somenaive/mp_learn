@@ -1,0 +1,13 @@
+<!--components/my-radio/my-radio.wxml-->
+<view style="border: solid;">
+
+
+    <!-- 点击事件绑定 -->
+    <button bindtap="change">显示/隐藏单选框</button>
+    <!-- 点击事件绑定 -->
+    <radio-group bindtap="change" hidden="{{hidd}}">
+        <view wx:for="{{info_list}}">
+            <radio>{{item}}</radio>
+        </view>
+    </radio-group>
+</view>

@@ -1,0 +1,20 @@
+<!--components/chat-item/chat-item.wxml-->
+<view style="height: 6vh;display: grid;grid-template-columns: 1fr 6fr;" wx:if="{{type=='left'}}">
+    <image style="height: 5vh;width: 5vh;border: solid;" src="{{headurl}}"></image>
+    <view>
+        <view style="font-size:x-small;color: lightgray;">{{name}}</view>
+        <view><text style="background-color: lightseagreen;">{{msg}}</text></view>
+    </view>
+</view>
+
+
+<view style="height: 6vh;display: grid;grid-template-columns: 6fr 1fr;" wx:else>
+   
+    <view>
+        <view style="font-size:x-small;color: lightgray;text-align: right;">{{name}}</view>
+        <view style="text-align: right;" ><text style="background-color: lightskyblue;">{{msg}}</text></view>
+    </view>
+    <view style="display: flex;flex-direction: row-reverse;">
+        <image style="height: 5vh;width: 5vh;border: solid;" src="{{headurl}}"></image>
+    </view>
+</view>

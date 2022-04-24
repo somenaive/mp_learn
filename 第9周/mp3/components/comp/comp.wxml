@@ -1,0 +1,2 @@
+<!--components/comp/comp.wxml-->
+<view style="background-color: lightskyblue;height: 20vh;">组件的内容</view>

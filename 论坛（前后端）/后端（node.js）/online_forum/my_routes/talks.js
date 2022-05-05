@@ -6,7 +6,7 @@ const router = new Router()
 var sqlite3 = require('sqlite3').verbose() //数据库
 
 // 数据库的路径
-var db_path = './database/online_forum.db'
+var db_path = require('../my-db').db_path
 
 router.get('/', async (ctx) => {
     ctx.body = 'talks 首页'
@@ -31,6 +31,7 @@ function showall() {
         })
         // all查询所有数据
         db.all(`select * from talks`, function (err, row) {
+            db.close()
             if (err) throw err
             else {
                 // console.log('all查询结果 ', row)

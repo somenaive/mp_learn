@@ -15,9 +15,7 @@ router.get('/', async (ctx) => {
 // 返回所有的讨论列表
 router.get('/showall', async (ctx) => {
     var dt = await showall();//等待数据库返回数据
-    ctx.body = {
-        data: dt
-    }
+    ctx.body =dt
 }
 )
 
